@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanjiayun.mapper.DepartmentMapper">
+    <resultMap id="BaseResultMap" type="com.wanjiayun.bean.Department">
+        <id column="id" property="id"/>
+        <result column="deptname"  property="deptname"/>
+        <result column="ceo" property="ceo"></result>
+        <result column="address" property="address"></result>
+    </resultMap>
+    <select id="findAllDepartment" resultMap="BaseResultMap">
+        select * from depttest
+    </select>
+
+</mapper>
